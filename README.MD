@@ -10,4 +10,5 @@
 8. Acesse o painel da AWS e verifique se os recursos foram criados
 9. A variável de output será o DNS do servidor criado, acesse o endereço, no formato `http://DNSDOSERVER:5000` e verifique se a aplicação está funcionando (pode demorar pois precisa instalar os pacotes python e iniciar o gunicorn)
    1.  Você pode verificar os processos python da instância EC2, acessando o EC2 Details, clicando na opção Connect e depois no botão Connect
+   2.  Depois que abrir o terminal da máquina digite o comando `ps -ax | grep python`
 10. Para destruir a infraestrutura, execute o comando `terraform destroy` e confirme a destruição dos recursos

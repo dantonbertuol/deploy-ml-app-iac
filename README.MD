@@ -2,7 +2,7 @@
 
 1. Abra o terminal e navegue até a pasta onde você colocou o arquivo Dockerfile
 2. Execute o comando `docker build -t machine-learning-app:1.0 .` para criar a imagem
-3. Execute o comando para criar o container Docker `docker run -dit --name ml-app -v .:/iac machine-learning-app:1.0 /bin/bash`
+3. Execute o comando para criar o container Docker `docker run -dit --name ml-app -v FULL_PATH_TO_PROJECT:/iac machine-learning-app:1.0 /bin/bash`
 4. Acesse o bash do docker através do comando `docker exec -it ml-app /bin/bash` e configure as credencias da AWS através do comando `aws configure`
 5. Execute o comando `cd iac/iac_deploy` para acessar a pasta onde estão os arquivos de infraestrutura
 6. Execute o comando `terraform init` para inicializar o terraform
